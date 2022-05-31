@@ -1,11 +1,11 @@
 <h2>Meu Estudantes</h2>
 <ul class="estudantes">
   <li *ngFor="let estudante of estudantes">
-    <button [class.selected]="estudante === selectedEstudante" type="button" (click)="onSelect(estudante)">
+    <button [class.selected]="estudante === selectedEstudantes" type="button" (click)="onSelect(estudante)">
       <span class="badge">{{estudante.id}}</span>
       <span class="name">{{estudante.name}}</span>
     </button>
   </li>
 </ul>
 
-<app-estudante-detail [estudante]="selectedEstudante"></app-estudante-detail>
+<app-estudante-detail [estudante]="selectedEstudantes"></app-estudante-detail>
