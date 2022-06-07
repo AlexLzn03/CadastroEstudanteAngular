@@ -1,0 +1,20 @@
+<div *ngIf="professor">
+
+    <h2>{{professor.name}}, detalhes:</h2>
+    <div><span>id: </span>{{professor.id}}</div>
+    <div>
+      <label for="professor-name">Nome do professor: </label>
+      <input id="professor-name" [(ngModel)]="professor.name" placeholder="name">
+    </div>
+
+    <div>
+      <label for="professor-mat">Matéria: </label>
+      <input id="professor-mat" [(ngModel)]="professor.mat" placeholder="materia">
+    </div>
+
+    <div>
+      <label for="professor-codp">Código Professor</label>
+      <input id="professor-codp" [(ngModel)]="professor.codp" placeholder="codigoprof">
+    </div>
+  
+  </div>

@@ -1,3 +1,13 @@
 <h1>{{title}}</h1>
-<app-estudantes></app-estudantes>
+<!--<app-estudantes></app-estudantes>
+<app-professores></app-professores>-->
+<!-- { path: 'dashboard', component: DashboardComponent }, no routing.module.ts é pra 
+    exibir o top 5-->
+
+<nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/estudantes">Estudantes</a>
+</nav>
+
+<router-outlet></router-outlet> <!--Rotas e links para acessar professores/Alunos-->
 <app-messages></app-messages>
