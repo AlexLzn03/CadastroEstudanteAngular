@@ -3,8 +3,28 @@
     <h2>{{estudante.name | uppercase}} Details</h2>
     <div><span>id: </span>{{estudante.id}}</div>
     <div>
-      <label for="estudante-name">Estudante name: </label>
+      <label for="estudante-name">Nome: </label>
       <input id="estudante-name" [(ngModel)]="estudante.name" placeholder="name">
+    </div>
+
+    <div>
+      <label for="estudante-cpf">CPF: </label>
+      <input id="estudante-cpf" [(ngModel)]="estudante.cpf" placeholder="cpf">
+    </div>
+
+    <div>
+      <label for="estudante-cod">Código: </label>
+      <input id="estudante-cod" [(ngModel)]="estudante.cod" placeholder="Código">
+    </div>
+
+    <div>
+      <label for="estudante-old">Idade: </label>
+      <input id="estudante-old" [(ngModel)]="estudante.old" placeholder="Idade">
+    </div>
+
+    <div>
+      <label for="estudante-gen">Gênero: </label>
+      <input id="estudante-gen" [(ngModel)]="estudante.gen" placeholder="Gênero">
     </div>
   
   </div>
