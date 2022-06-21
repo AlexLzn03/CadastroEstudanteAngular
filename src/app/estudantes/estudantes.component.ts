@@ -21,11 +21,6 @@ export class EstudantesComponent implements OnInit {
     this.getEstudantes();
   }
 
-  onSelect(estudante: Estudante): void {
-    this.selectedEstudantes = estudante;
-    this.messageService.add(`EstudantesComponent: Selected estudante id=${estudante.id}`);
-  }
-
   getEstudantes(): void {
     this.estudanteService.getEstudantes()
         .subscribe(estudantes => this.estudantes = estudantes);

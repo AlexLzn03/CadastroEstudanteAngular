@@ -26,10 +26,7 @@ export class EstudanteDetailComponent implements OnInit {
   
   getEstudante(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.estudanteService.getEstudante(id)
+    this.estudanteService.getEstudantes()
       .subscribe(estudante => this.estudante = estudante);
-
-  goBack(): void {
-    this.location.back();
-  }
+}
 }
