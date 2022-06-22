@@ -10,6 +10,7 @@ import { EstudantesComponent } from './estudantes/estudantes.component';
 import { ProfessoresComponent } from './professores/professores.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
+import { EstudanteSearchComponent } from './estudante-search/estudante-search.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { AppRoutingModule } from './app-routing.module';
     EstudanteDetailComponent,
     ProfessorDetailComponent,
     MessagesComponent,
-    MessagesComponent
+    MessagesComponent,
+    EstudanteSearchComponent
   ],
 
   bootstrap: [AppComponent]
