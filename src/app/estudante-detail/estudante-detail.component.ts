@@ -1,9 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Estudante } from '../estudante';
-
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
+import { Estudante } from '../estudante';
 import { EstudanteService } from '../estudante.service';
 
 @Component({
@@ -26,7 +25,10 @@ export class EstudanteDetailComponent implements OnInit {
   
   getEstudante(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.estudanteService.getEstudantes()
+    this.estudanteService.getEstudante(id)
       .subscribe(estudante => this.estudante = estudante);
+}
+goBack(): void {
+  this.location.back();
 }
 }

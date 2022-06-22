@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Estudante } from '../estudante';
 import { EstudanteService } from '../estudante.service';
 import { MessageService } from '../message.service';
+import { ESTUDANTES } from '../mock-estudantes';
 
 @Component({
   selector: 'app-estudantes',
@@ -10,10 +11,8 @@ import { MessageService } from '../message.service';
   styleUrls: ['./estudantes.component.css']
 })
 export class EstudantesComponent implements OnInit {
-
-  selectedEstudantes?: Estudante;
-
-  estudantes: Estudante[] = [];
+  estudantes = ESTUDANTES;
+  estudante: Estudante[] = [];
 
   constructor(private estudanteService: EstudanteService, private messageService: MessageService) { }
 
